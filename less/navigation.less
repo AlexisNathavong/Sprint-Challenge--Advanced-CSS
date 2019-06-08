@@ -7,6 +7,11 @@
     max-width: 100%;
     border: solid 1px whitesmoke; 
     background: whitesmoke;
+    @media @phone {
+        margin-left: 5px;
+        padding-left: 5px;
+        width: 99%;
+    }
 
 }
 
@@ -16,12 +21,18 @@ nav a {
     font-size: 16px;
     margin-left: 40px;
     margin-right: 40px;
-    @phone: ;
+    @media @phone {
+        margin-right: 5px;
+    }
 }
 
 nav {
     display: flex;
     justify-content: center;
+    @media @phone {
+        width: 100%;
+    }
+    
 }
 
 h1 {
